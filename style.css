@@ -1,8 +1,111 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 /* body {
   background: red;
 } */
+body {
+  height: 100vh;
+}
+.container {
+  width: 90%;
+  height: 500px;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "cour cour cal cal pictures squarre"
+    "skype cont trading trading explo help"
+    "list drive . . card health"
+    "desk desk . . info info";
+  text-align: center;
+}
+.block {
+  display: grid;
+  grid-gap: 2px;
+  grid-template: "a1 a2" 1fr "a3 a4" 1fr;
+}
+#cour {
+  grid-area: cour;
+}
+#skype {
+  grid-area: skype;
+}
+#cont {
+  grid-area: cont;
+}
+#list {
+  grid-area: list;
+}
+#drive {
+  grid-area: drive;
+}
+#desk {
+  grid-area: desk;
+}
+#cal {
+  grid-area: cal;
+}
+#trading {
+  grid-area: trading;
+}
+#pictures {
+  grid-area: pictures;
+}
+#explo {
+  grid-area: explo;
+}
+#card {
+  grid-area: card;
+}
+#info {
+  grid-area: info;
+}
+#squarre {
+  grid-area: squarre;
+}
+#a1 {
+  grid-area: a1;
+}
+#a2 {
+  grid-area: a2;
+}
+#a3 {
+  grid-area: a3;
+}
+#a4 {
+  grid-area: a4;
+}
+#help {
+  grid-area: help;
+}
+#health {
+  grid-area: health;
+}
+.block-grey {
+  background: grey;
+}
+.block-green {
+  background: green;
+}
+.block-dgreen {
+  background: darkgreen;
+}
+.block-orange {
+  background: orange;
+}
+.block-red {
+  background: red;
+}
+.block-blue {
+  background: blue;
+}
+.block-dblue {
+  background: darkblue;
+}
+.block-purp {
+  background: purple;
+}
