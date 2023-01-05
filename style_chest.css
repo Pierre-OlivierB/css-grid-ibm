@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background: red; */
+  height: 100vh;
+}
+.table {
+  display: flex;
+}
+.btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+.btns button {
+  padding: 10px;
+  font-weight: bold;
+  height: 30%;
+}
+.btns button:first-child {
+  background: hsl(60, 60%, 50%);
+}
+.btns button:nth-child(2) {
+}
+.chest {
+  width: 400px;
+  height: 400px;
+  border: 20px double black;
+}
+.white {
+  background: hsl(0, 7%, 79%);
+}
+.black {
+  background: hsl(0, 9%, 19%);
+}
