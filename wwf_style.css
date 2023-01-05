@@ -1,0 +1,71 @@
+/* body {
+  background: red;
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* .container {
+  display: flex;
+  flex-direction: column;
+}
+.first-line {
+  background: blue;
+}
+.second-line {
+  background: green;
+}
+.third-line {
+  background: red;
+} */
+body {
+  height: 100vh;
+}
+.container {
+  height: 500px;
+  display: grid;
+  grid-template:
+    "eat eat eat opti opti opti" 1fr
+    "eat eat eat opti opti opti" 1fr
+    "move move trash trash num num" 1fr
+    "choose choose choose best best best" 1fr
+    "choose choose choose best best best" 1fr;
+}
+.card {
+  border: 5px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+  color: whitesmoke;
+}
+#eat {
+  grid-area: eat;
+  background: hsl(20, 35%, 67%);
+}
+#opti {
+  grid-area: opti;
+  background: hsl(60, 35%, 67%);
+}
+#move {
+  grid-area: move;
+  background: hsl(100, 35%, 67%);
+}
+#trash {
+  grid-area: trash;
+  background: hsl(140, 35%, 67%);
+}
+#num {
+  grid-area: num;
+  background: hsl(180, 35%, 67%);
+}
+#choose {
+  grid-area: choose;
+  background: hsl(220, 35%, 67%);
+}
+#best {
+  grid-area: best;
+  background: hsl(260, 35%, 67%);
+}
