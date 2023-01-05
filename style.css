@@ -8,6 +8,12 @@
 } */
 body {
   height: 100vh;
+  color: white;
+}
+.df {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container {
   width: 90%;
