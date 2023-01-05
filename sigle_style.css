@@ -1,0 +1,63 @@
+/* body {
+  background: red;
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  padding: 15px;
+}
+.container {
+  width: 600px;
+  height: 600px;
+  display: grid;
+  grid-template:
+    "g-one g-one g-one g-one g-one g-three" 1fr
+    "g-two b-one b-one b-one b-two g-three" 1fr
+    "g-two b-three y-one y-one b-two g-three" 1fr
+    "g-two b-three y-one y-one b-two g-three" 1fr
+    "g-two b-three b-four b-four b-four g-three" 1fr
+    "g-two g-four g-four g-four g-four g-four" 1fr;
+  grid-gap: 40px;
+}
+.green {
+  background: hsl(120, 55%, 68%);
+}
+#g-one {
+  grid-area: g-one;
+}
+#g-two {
+  grid-area: g-two;
+}
+#g-three {
+  grid-area: g-three;
+}
+#g-four {
+  grid-area: g-four;
+}
+
+#b-one {
+  grid-area: b-one;
+}
+#b-two {
+  grid-area: b-two;
+}
+#b-three {
+  grid-area: b-three;
+}
+#b-four {
+  grid-area: b-four;
+}
+#y-one {
+  grid-area: y-one;
+}
+
+.blue {
+  background: hsl(240, 70%, 75%);
+}
+.yellow {
+  background: hsl(48, 84%, 69%);
+}
