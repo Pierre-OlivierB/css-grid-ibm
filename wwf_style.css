@@ -33,6 +33,9 @@ body {
     "choose choose choose best best best" 1fr
     "choose choose choose best best best" 1fr;
 }
+.container {
+  background: black;
+}
 .card {
   border: 5px solid black;
   display: flex;
@@ -43,14 +46,21 @@ body {
   font-weight: 500;
   color: whitesmoke;
   transform: scale(1);
+  z-index: 0;
+  position: relative;
 }
 .card:hover {
   transform: scale(1.1);
   cursor: pointer;
-  z-index: 1;
   animation: transform 1s ease-in-out;
   border: 2px solid hsl(240, 77%, 69%);
   font-weight: 900;
+  z-index: 2;
+  /* filter: blur(2px); */
+}
+.card p {
+  position: absolute;
+  z-index: 3;
 }
 @keyframes transform {
   from {
@@ -66,29 +76,58 @@ body {
 }
 #eat {
   grid-area: eat;
+}
+.bg-eat {
   background: url(./img/eat.jpg) center/cover;
+}
+.card:hover .bg-eat,
+.card:hover .bg-opti,
+.card:hover .bg-move,
+.card:hover .bg-trash,
+.card:hover .bg-num,
+.card:hover .bg-choose,
+.card:hover .bg-best {
+  filter: blur(2px);
+  position: absolute;
+  z-index: 2;
 }
 #opti {
   grid-area: opti;
+}
+.card div {
+  width: 100%;
+  height: 100%;
+}
+.bg-opti {
   background: url(./img/conso.jpg) center/cover;
 }
 #move {
   grid-area: move;
+}
+.bg-move {
   background: url(./img/move.jpg) center/cover;
 }
 #trash {
   grid-area: trash;
+}
+.bg-trash {
   background: url(./img/trash.jpg) center/cover;
 }
 #num {
   grid-area: num;
+}
+.bg-num {
   background: url(./img/num.jpg) center/cover;
 }
 #choose {
   grid-area: choose;
+}
+.bg-choose {
   background: url(./img/choose.jpg) center/cover;
 }
 #best {
   grid-area: best;
+}
+.bg-best {
   background: url(./img/water.jpg) center/cover;
 }
