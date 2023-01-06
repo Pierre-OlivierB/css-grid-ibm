@@ -23,6 +23,7 @@ body {
   height: 100vh;
 }
 .container {
+  width: 95%;
   height: 500px;
   display: grid;
   grid-template:
@@ -39,33 +40,55 @@ body {
   align-items: center;
   text-transform: uppercase;
   text-align: center;
+  font-weight: 500;
   color: whitesmoke;
+  transform: scale(1);
+}
+.card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  z-index: 1;
+  animation: transform 1s ease-in-out;
+  border: 2px solid hsl(240, 77%, 69%);
+  font-weight: 900;
+}
+@keyframes transform {
+  from {
+    transform: scale(1);
+    border: 5px solid black;
+    font-weight: 600;
+  }
+  to {
+    transform: scale(1.1);
+    border: 2px solid hsl(240, 77%, 69%);
+    font-weight: 900;
+  }
 }
 #eat {
   grid-area: eat;
-  background: hsl(20, 35%, 67%);
+  background: url(./img/eat.jpg) center/cover;
 }
 #opti {
   grid-area: opti;
-  background: hsl(60, 35%, 67%);
+  background: url(./img/conso.jpg) center/cover;
 }
 #move {
   grid-area: move;
-  background: hsl(100, 35%, 67%);
+  background: url(./img/move.jpg) center/cover;
 }
 #trash {
   grid-area: trash;
-  background: hsl(140, 35%, 67%);
+  background: url(./img/trash.jpg) center/cover;
 }
 #num {
   grid-area: num;
-  background: hsl(180, 35%, 67%);
+  background: url(./img/num.jpg) center/cover;
 }
 #choose {
   grid-area: choose;
-  background: hsl(220, 35%, 67%);
+  background: url(./img/choose.jpg) center/cover;
 }
 #best {
   grid-area: best;
-  background: hsl(260, 35%, 67%);
+  background: url(./img/water.jpg) center/cover;
 }
