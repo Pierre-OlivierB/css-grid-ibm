@@ -53,6 +53,7 @@ body {
   background: rgb(55, 54, 54);
   border-radius: 25px;
 } */
+/*With table :*/
 tr:nth-child(1) .black:nth-child(n):after,
 tr:nth-child(2) .black:nth-child(n):after,
 tr:nth-child(3) .black:nth-child(n):after,
@@ -76,6 +77,88 @@ tr:nth-last-child(1) .white:nth-child(n + 1):after {
   border: 1px solid black;
   top: 5px;
   left: 5px;
+  width: 20px;
+  height: 20px;
+  background: rgb(72, 71, 71);
+  border-radius: 25px;
+}
+/*with ul li*/
+.chest {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+.squarre {
+  border: 1px solid black;
+  list-style-type: none;
+  position: relative;
+}
+/* .squarre:nth-child(1) {
+  background: red;
+} */
+.squarre:nth-child(2):after,
+.squarre:nth-child(4):after,
+.squarre:nth-child(6):after,
+.squarre:nth-child(8):after,
+.squarre:nth-child(10):after,
+.squarre:nth-child(11):after,
+.squarre:nth-child(13):after,
+.squarre:nth-child(15):after,
+.squarre:nth-child(17):after,
+.squarre:nth-child(19):after,
+.squarre:nth-child(22):after,
+.squarre:nth-child(24):after,
+.squarre:nth-child(26):after,
+.squarre:nth-child(28):after,
+.squarre:nth-child(30):after,
+.squarre:nth-child(31):after,
+.squarre:nth-child(33):after,
+.squarre:nth-child(35):after,
+.squarre:nth-child(37):after,
+.squarre:nth-child(39):after {
+  content: "";
+  position: absolute;
+  border: 1px solid white;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background: rgb(217, 214, 214);
+  border-radius: 25px;
+}
+/* li:nth-child(even) + .squarre:nth-child(odd),
+li:nth-child(even) {
+  background: red;
+}
+li:nth-child(n + 61) {
+  background: white;
+} */
+/* li:nth-child(n+1) */
+
+.squarre:nth-last-child(40):after,
+.squarre:nth-last-child(38):after,
+.squarre:nth-last-child(36):after,
+.squarre:nth-last-child(34):after,
+.squarre:nth-last-child(32):after,
+.squarre:nth-last-child(29):after,
+.squarre:nth-last-child(27):after,
+.squarre:nth-last-child(25):after,
+.squarre:nth-last-child(23):after,
+.squarre:nth-last-child(21):after,
+.squarre:nth-last-child(18):after,
+.squarre:nth-last-child(16):after,
+.squarre:nth-last-child(14):after,
+.squarre:nth-last-child(12):after,
+.squarre:nth-last-child(9):after,
+.squarre:nth-last-child(7):after,
+.squarre:nth-last-child(5):after,
+.squarre:nth-last-child(3):after,
+.squarre:nth-last-child(1):after {
+  content: "";
+  position: absolute;
+  border: 1px solid black;
+  top: 2px;
+  left: 2px;
   width: 20px;
   height: 20px;
   background: rgb(72, 71, 71);
